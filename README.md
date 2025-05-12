@@ -100,6 +100,21 @@ Response:
   "short_url": "https://<api-url>/<short_code>"
 }
 ```
+Here is overall example request
+```bash
+ curl -X POST https://xxxxxxx.execute-api.us-east-2.amazonaws.com/shorten \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://www.google.com"}'
+```
+Here is outcome
+```bash 
+{"short_url": "https://example.com/Rv2e6B"}%
+```
+
+
+
+
+
 
 **GET /{short_code}**
 
